@@ -17,112 +17,23 @@ get_header();
 
         <div class="tabs _tabs">
             <ul class="faq__list">
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Кому нельзя имплантировать зубы?
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Узнайте, подходит ли вам имплантация
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Приживется ли имплант?
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Узнайте, какие случаи в имплантации называются
-                        «сложные»
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Вся правда об имплантации
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Имплантация всех зубов за день, возможна ли?
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Готовитесь к имплантации? Узнайте, нужна ли вам костная
-                        пластика!
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Готовитесь к имплантации? Узнайте сколько это стоит!
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
+            <?php while (have_rows("faq")):
+                the_row(); ?>
+                
+            <li class="faq__item _tabs-accordion custom-border-top">
+                <button class="faq__button _tabs-button"><?php the_sub_field("вопрос") ?>
+                    <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
+                        <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
+                        <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
+                    </svg>
+                </button>
+                <div class="faq__content _tabs-content">
+                    <p><?php the_sub_field("ответ") ?></p>
+                </div>
+            </li>
+                <?php endwhile; ?>
             </ul>
         </div>
 

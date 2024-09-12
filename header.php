@@ -31,12 +31,12 @@
                 </a>
             </div>
             <ul class="flex gap-4 md:gap-8">
-                <li class="header__li"><a class="header__link link" href="tel:+74232260557">+7 (423) 226-05-57</a></li>
-                <li class="header__li"><a class="header__link link" href="tel:+74232260557">+7 (423) 226-05-57</a></li>
-                <li class="header__li"><a class="header__link link" href="mailto:info@vladstom.ru">info@vladstom.ru</a>
+                <li class="header__li"><a class="header__link link" href="tel:<?= get_field("телефон_1_для_роботов", "option"); ?>"><?= get_field("телефон_1", "option"); ?></a></li>
+                <li class="header__li"><a class="header__link link" href="tel:<?= get_field("телефон_2_для_роботов", "option"); ?>"><?= get_field("телефон_2", "option"); ?></a></li>
+                <li class="header__li"><a class="header__link link" href="mailto:<?= get_field("почта", "option"); ?>"><?= get_field("почта", "option"); ?></a>
                 </li>
                 <li><a class="header__link header__link--mobile underline link"
-                        href="mailto:info@vladstom.ru">WhatsApp</a></li>
+                        href="<?= get_field("whatsapp", "option"); ?>">WhatsApp</a></li>
                 <li><a class="header__link header__link--mobile underline link"
                         href="mailto:info@vladstom.ru">Новости</a></li>
             </ul>

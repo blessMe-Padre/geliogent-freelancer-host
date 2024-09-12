@@ -42,3 +42,16 @@ function add_menu()
     register_nav_menu('top-services', 'Меню в модалке - Услуги');
     register_nav_menu('top-for-clients', 'Меню в модалке - Клиентам');
 }
+
+if (function_exists('acf_add_options_page')) {
+
+    acf_add_options_page(
+        array(
+            'page_title' => 'Редактирование контактов и телефонов',
+            'menu_title' => 'Телефоны и контакты',
+            'menu_slug' => 'theme-general-settings',
+            'capability' => 'edit_posts',
+            'redirect' => false
+        )
+    );
+}

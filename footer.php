@@ -84,14 +84,14 @@
                             <li><a href="tel:+74232300330">+7 (423) 2-300-330</a></li>
                             <li><a href="tel:+74232260557">+7 (423) 226-05-570</a></li>
                             <li><a href="tel:+79242563246">+7 (924) 256-32-46</a></li>
-                            <li><a href="mailto:info@vladstom.ru">info@vladstom.ru</a></li>
+                            <li><a href="mailto:<?= get_field("почта", "option"); ?>">info@vladstom.ru</a></li>
                         </ul>
                     </div>
                     <div class="footer__social">
                         <h3>Мы в соц сетях</h3>
                         <ul>
-                            <li><a class="text-white underline" href="#">Вконтакте</a></li>
-                            <li><a class="text-white underline" href="#">Telegram</a></li>
+                            <li><a class="text-white underline" href="<?= get_field("вконтакте", "option"); ?>">Вконтакте</a></li>
+                            <li><a class="text-white underline" href="<?= get_field("телеграм", "option"); ?>">Telegram</a></li>
                         </ul>
                     </div>
                 </div>

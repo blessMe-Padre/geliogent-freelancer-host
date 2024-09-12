@@ -15,59 +15,22 @@ get_header();
 
         <div class="tabs _tabs">
             <ul class="faq__list">
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Договор на оказание платных медицинских услуг
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Положение о правилах оказания медицинских услуг
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Постановление Правительства от 11.05.2023 №736
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
-                <li class="faq__item _tabs-accordion custom-border-top">
-                    <button class="faq__button _tabs-button">Правила поведения пациента
-                        <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
-                            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
-                            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
-                        </svg>
-                    </button>
-                    <div class="faq__content _tabs-content">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, consectetur!</p>
-                    </div>
-                </li>
-
+            <?php while (have_rows("info")):
+                the_row(); ?>
+            <li class="faq__item _tabs-accordion custom-border-top">
+            <button class="faq__button _tabs-button"><?php the_sub_field("вопрос") ?>
+            <svg class="faq__button-svg" width="50" height="51" viewBox="0 0 50 51" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="1" width="49" height="49" rx="24.5" stroke="white" />
+            <path d="M25.25 10V40.5" stroke="white" stroke-width="2" />
+            <path d="M40.5 25.25H10" stroke="white" stroke-width="2" />
+            </svg>
+            </button>
+            <div class="faq__content _tabs-content">
+            <p><?php the_sub_field("ответ") ?></p>
+            </div>
+            </li>
+        <?php endwhile; ?>
             </ul>
         </div>
 
