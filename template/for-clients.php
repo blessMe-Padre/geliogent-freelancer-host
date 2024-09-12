@@ -21,8 +21,7 @@ get_header();
                     <video preload="metadata" muted
                         poster="<?php echo get_template_directory_uri() ?>/src/video/placeholder-2.png"
                         class="video for-clients-video">
-                        <source src="<?php echo get_template_directory_uri() ?>/src/video/video.webm" type="video/webm">
-                        <source src="<?php echo get_template_directory_uri() ?>/src/video/healing.mp4" type="video/mp4">
+                        <source src="<?= get_field("пациентам_видео"); ?>" type="video/mp4">
                     </video>
                     <!-- <img class="healing-video__play-btn" src="<?php echo get_template_directory_uri() ?>/src/video/play.svg" height="100" width="100" alt="img"> -->
                 </div>

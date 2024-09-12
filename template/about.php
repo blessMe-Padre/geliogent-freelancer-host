@@ -5,6 +5,53 @@ Template Name: шаблон страница - О компании
 get_header();
 ?>
 
+<div class="preloader">
+    <div class="rings-wrapper">
+        <div class="rings">
+            <div class="ring1"></div>
+            <div class="ring2"></div>
+            <div class="ring3"></div>
+            <div class="ring4"></div>
+            <div class="ring5"></div>
+        </div>
+        <p class="rings-percent z-12">0%</p>
+    </div>
+    <div id="ctn-preloader" class="ctn-preloader">
+        <div class="animation-preloader">
+            <div class="txt-loading">
+                <span data-text-preloader="Г" class="letters-loading">
+                    Г
+                </span>
+                <span data-text-preloader="е" class="letters-loading">
+                    е
+                </span>
+                <span data-text-preloader="л" class="letters-loading">
+                    л
+                </span>
+                <span data-text-preloader="и" class="letters-loading">
+                    и
+                </span>
+                <span data-text-preloader="о" class="letters-loading">
+                    о
+                </span>
+                <span data-text-preloader="д" class="letters-loading">
+                    д
+                </span>
+                <span data-text-preloader="е" class="letters-loading">
+                    е
+                </span>
+                <span data-text-preloader="н" class="letters-loading">
+                    н
+                </span>
+                <span data-text-preloader="т" class="letters-loading">
+                    т
+                </span>
+            </div>
+        </div>
+    </div>
+    <p class="preloader__subtitle">Инновационная стоматология</p>
+</div>
+
 <h1 class="visually-hidden">Гелиодент - О клинике</h1>
 
 <div class="bg-wrapper overflow-hidden">
@@ -571,7 +618,7 @@ get_header();
     <div class="container-lg">
         <video class="video-about__video" preload="metadata"
             poster="<?php echo get_template_directory_uri() ?>/src/video/about-video.jpg">
-            <source src="<?php echo get_template_directory_uri() ?>/src/video/healing.mp4" type="video/mp4">
+            <source src="<?= get_field("видео_о_компании"); ?>" type="video/mp4">
         </video>
         <img class="video-about__play-btn" src="<?php echo get_template_directory_uri() ?>/src/video/play.svg"
             height="100" width="100" alt="img">

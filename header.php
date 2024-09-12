@@ -38,7 +38,7 @@
                 <li><a class="header__link header__link--mobile underline link"
                         href="<?= get_field("whatsapp", "option"); ?>">WhatsApp</a></li>
                 <li><a class="header__link header__link--mobile underline link"
-                        href="mailto:info@vladstom.ru">Новости</a></li>
+                        href="#">Новости</a></li>
             </ul>
         </div>
 
@@ -71,9 +71,9 @@
                 </div>
                 <div class="menu-window__footer">
                     <ul>
-                        <li><a href="tel:+74232260557">+7 (423) 226-05-57</a></li>
-                        <li><a href="tel:+79242563246">+7 (924) 256-32-46</a></li>
-                        <li><a href="mailto:info@vladstom.ru">info@vladstom.ru</a></li>
+                    <li><a href="tel:<?= get_field("телефон_1_для_роботов", "option"); ?>"><?= get_field("телефон_1", "option"); ?></a></li>
+                    <li><a href="tel:<?= get_field("телефон_2_для_роботов", "option"); ?>"><?= get_field("телефон_2", "option"); ?></a></li>
+                    <li><a href="mailto:<?= get_field("почта", "option"); ?>"><?= get_field("почта", "option"); ?></a></li>
                         <li><a class="underline" target="_blank" href="https://wa.me/74232260557">WhatsApp</a></li>
                         <li><a class="underline" href="#">новости</a></li>
                     </ul>
