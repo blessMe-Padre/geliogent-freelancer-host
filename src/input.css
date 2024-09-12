@@ -1,0 +1,300 @@
+/* Импорт шрифтов */
+
+/* Импорт кастомных стилей для компонентов */
+@import './block/menu-button.css';
+@import './block/fonts.css';
+@import './block/menu.css';
+@import './block/swiper.css';
+@import './block/sliders.css';
+@import './block/scrool-top.css';
+@import './block/preloader.css';
+@import './block/animations.css';
+@import './block/hero.css';
+@import './block/table.css';
+@import './block/info.css';
+@import './block/services-view.css';
+@import './block/card.css';
+@import './block/news-section.css';
+@import './block/buttons.css';
+@import './block/solution.css';
+@import './block/footer.css';
+@import './block/menu-window.css';
+@import './block/header.css';
+@import './block/popup.css';
+@import './block/product-healing.css';
+@import './block/our-clients.css';
+@import './block/title.css';
+@import './block/video.css';
+@import './block/time.css';
+@import './block/how.css';
+@import './block/product-hero-2.css';
+@import './block/product-hero-3.css';
+@import './block/product-hero-4.css';
+@import './block/views.css';
+@import './block/healing-video.css';
+@import './block/prices.css';
+@import './block/calculate.css';
+@import './block/our-work.css';
+@import './block/faq.css';
+@import './block/for-clients.css';
+@import './block/visit.css';
+@import './block/member.css';
+@import './block/careful.css';
+@import './block/contact.css';
+@import './block/about.css';
+
+
+/* Импорт TailWind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Переменные */
+:root {
+    --white: #ffffff;
+    --default-black: #363232;
+    --dark-blue: #041126;
+    --blue: #192436;
+    --bg: #041126;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Bebas Neue', sans-serif;
+        color: #262626;
+        font-weight: 400;
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1480px]
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    /* Ширина всего элемента навигации */
+}
+
+body::-webkit-scrollbar-track {
+    background: #152033;
+    /* Цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #152033;
+    /* Цвет бегунка */
+    border-radius: 20px;
+    /* Округление бегунка */
+    border: 3px solid #152033;
+    /* Оформление границ бегунка */
+}
+
+
+/* Прочие классы */
+.lock {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.bg-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.bg-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--dark-blue);
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+    position: relative;
+}
+
+@media (max-width: 1270px) {
+    .section {
+        height: 100%;
+        min-height: 480px;
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 1 !important;
+}
+
+.section--dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.image-wrapper {
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    transition: transform 0.3s linear;
+}
+
+.image-wrapper img:hover {
+    transform: scale(1.1);
+}
+
+.section-info {
+    padding-top: 50px;
+}
+
+.product-main-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.custom-border-top {
+    position: relative;
+}
+
+.custom-border-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: aqua;
+    background: #ffffff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.custom-border-top::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: 8px;
+    background: #152033;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* background ========================*/
+
+
+.space-tooth-background {
+    background-image: url('../src/img/bg.webp');
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.visit-bg {
+    background-image: url('../src/img/visit.webp');
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: contain;
+}
+
+
+
+.container-lg {
+    max-width: 1960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.link {
+    transition: color 0.5s ease;
+}
+
+.link:hover {
+    color: #596476;
+}
+
+.border-subtitle {
+    padding: 0 20px;
+    border: 1px solid #192436;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* Удалить все что ниже */
+
+.scroll_box {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scroll_swipper {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    transition-property: top;
+    transition-duration: 1s;
+}
+
+.main-swiper {
+    height: 100vh;
+    background-color: var(--dark-blue);
+    background-image: url('../src/img/main-bg.png');
+}
+
+.absolute-title {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    font-size: 180px;
+}
+
+.header {
+    transition: all 0.3s ease;
+}
+
+.shadow-filter-1 {
+    /* background: rgba(21, 32, 51, 0.9); */
+    /* box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23); */
+    backdrop-filter: blur(400px);
+    background: rgba(21, 32, 51, 0.2);
+}
+
+.section-placeholder {
+    height: 100vh;
+    background-color: var(--dark-blue);
+    color: #ffffff;
+    font-size: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
